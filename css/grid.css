@@ -154,10 +154,10 @@
     }
     .back-to-top {
         position: fixed;
-        bottom: 122px;
+        bottom: 72px;
         right: 24px;
         z-index: 999;
-        font-size: 64px;
+        font-size: 15px;
         padding: 15px;
     }
     .fcta-zalo-vi-tri-nut {
