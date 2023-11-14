@@ -1,0 +1,46 @@
+.left-to-right {
+    transform: translateX(-150%);
+    transition: 1s ease-in-out;
+}
+
+.left-to-right.start {
+    transform: translateX(0);
+}
+
+.right-to-left {
+    transform: translateX(150%);
+    transition: 1s ease-in-out;
+}
+
+.right-to-left.start {
+    transform: translateX(0);
+}
+
+.zoom {
+    transform: scale(0);
+    transition: .6s ease-in-out;
+}
+
+.zoom.start {
+    transform: scale(1);
+}
+
+.delay-2 {
+    transition-delay: .2s;
+}
+
+.delay-3 {
+    transition-delay: .3s;
+}
+
+.delay-4 {
+    transition-delay: .4s;
+}
+
+.delay-5 {
+    transition-delay: .5s;
+}
+
+.delay-6 {
+    transition-delay: .6s;
+}

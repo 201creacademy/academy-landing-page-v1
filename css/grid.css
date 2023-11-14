@@ -1,0 +1,177 @@
+/* GRIG SYSTEM */
+
+[class*='col-'] {
+    padding: 1rem;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-1 {
+    width: 8.3333333%;
+}
+
+.col-2 {
+    width: 16.666666%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.3333333%;
+}
+
+.col-5 {
+    width: 41.6666667%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.3333333%;
+}
+
+.col-8 {
+    width: 66.6666667%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.3333333333%;
+}
+
+.col-11 {
+    width: 91.6666666667%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.show-mb {
+    display: none!important;
+}
+
+
+/* GIRD SYSTEM FOR MOBILE */
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 13px;
+    }
+    .container {
+        padding: 0;
+    }
+    .show-mb {
+        display: flex !important;
+    }
+    h1 {
+        font-size: 2rem !important;
+    }
+    span {
+        font-size: inherit;
+    }
+    .cart-btn i {
+        font-size: 2rem;
+    }
+    .about {
+        background-image: url('./assets/dan-gold-4_jhDO54BYg-unsplash.jpg');
+        background-attachment: fixed;
+    }
+    .about-slogan.start {
+        transform: translateX(0);
+    }
+    .food-menu {
+        padding: 4rem 1rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+    .food-item {
+        width: 50%;
+        height: 25rem;
+    }
+    .food-category {
+        overflow-y: scroll;
+    }
+    .food-category::-webkit-scrollbar {
+        width: 0 !important;
+        display: none;
+    }
+    .food-category button {
+        width: max-content;
+    }
+    .back-to-top {
+        bottom: 6rem;
+        right: 1rem;
+    }
+    .review-wrap.active {
+        transform: unset!important;
+    }
+    /* MOBILE NAV */
+    .col-xs-1 {
+        width: 8.33%;
+    }
+    .col-xs-2 {
+        width: 16.66%;
+    }
+    .col-xs-3 {
+        width: 25%;
+    }
+    .col-xs-4 {
+        width: 33.33%;
+    }
+    .col-xs-5 {
+        width: 41.66%;
+    }
+    .col-xs-6 {
+        width: 50%;
+    }
+    .col-xs-7 {
+        width: 58.33%;
+    }
+    .col-xs-8 {
+        width: 66.66%;
+    }
+    .col-xs-9 {
+        width: 75%;
+    }
+    .col-xs-10 {
+        width: 83.33%;
+    }
+    .col-xs-11 {
+        width: 91.66%;
+    }
+    .col-xs-12 {
+        width: 100%;
+    }
+    .h-xs {
+        display: none!important;
+    }
+    .fcta-zalo-vi-tri-nut {
+        position: fixed;
+        bottom: 72px;
+        right: 24px;
+        z-index: 999
+    }
+    .fcta-phone-vi-tri-nut {
+        position: fixed;
+        bottom: 122px;
+        right: 24px;
+        z-index: 999
+    }
+    .fcta-zalo-mess{
+        display: none;
+    }
+    .fcta-phone-mess{
+        display: none;
+    }
+}
