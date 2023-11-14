@@ -397,15 +397,15 @@ section {
 
 .back-to-top {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
-    border-radius: 10px;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50px;
     background-color: var(--primary-color);
     color: var(--white);
     display: none;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.64rem;
     padding: .5rem;
     z-index: 99;
 }
@@ -615,7 +615,7 @@ section {
 
 .fcta-zalo-vi-tri-nut {
     position: fixed;
-    bottom: 24px;
+    bottom: 84px;
     right: 24px;
     z-index: 999
 }
@@ -708,7 +708,7 @@ div.fcta-zalo-mess {
 
 div.fcta-zalo-mess {
     position: fixed;
-    bottom: 29px;
+    bottom: 89px;
     right: 58px;
     z-index: 99;
     background: #fff;
@@ -740,7 +740,7 @@ span#fcta-zalo-tracking {
 
 .fcta-phone-vi-tri-nut {
     position: fixed;
-    bottom: 84px;
+    bottom: 144px;
     right: 24px;
     z-index: 999
 }
@@ -833,7 +833,7 @@ div.fcta-phone-mess {
 
 div.fcta-phone-mess {
     position: fixed;
-    bottom: 89px;
+    bottom: 149px;
     right: 58px;
     z-index: 99;
     background: #fff;

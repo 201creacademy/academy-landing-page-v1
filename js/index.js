@@ -14,18 +14,18 @@ Array.from(menuItems).forEach(item => {
 })
 
 //button back to top
-// const btnBackToTop = document.querySelector(".back-to-top");
+const btnBackToTop = document.querySelector(".back-to-top");
 
-// window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function() {
 
-//     if (window.scrollY > 200 || document.documentElement.scrollTop > 200) {
+    if (window.scrollY > 200 || document.documentElement.scrollTop > 200) {
 
-//         btnBackToTop.style.display = "flex";
-//     } else {
+        btnBackToTop.style.display = "flex";
+    } else {
 
-//         btnBackToTop.style.display = "none";
-//     }
-// })
+        btnBackToTop.style.display = "none";
+    }
+})
 
 
 var coll = document.getElementsByClassName("collapsible");
