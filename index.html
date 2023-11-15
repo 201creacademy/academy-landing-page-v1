@@ -23,38 +23,103 @@
         </div>
         <div class="mb-nav-item active">
             <a href="home#home">
-                <i class="fa fa-home">
+                <i class="fa fa-home" onclick='closeNav()'>
                 </i>
-                <div class="mb-nav-title">Trang Chủ</div>
+                <div class="mb-nav-title">TRANG CHỦ</div>
             </a>
         </div>
         <div class="mb-nav-item">
-            <a href="home#about">
+            <a href="home#about" onclick='closeNav()'>
                 <i class="fa fa-address-card-o">
                 </i>
-                <div class="mb-nav-title">Giới Thiệu</div>
+                <div class="mb-nav-title">GIỚI THIỆU</div>
             </a>
         </div>
         <div class="mb-nav-item">
-            <a href="home#course-section">
+            <a href="home#course-section" onclick='closeNav()'>
                 <i class="fa fa-book">
                 </i>
-                <div class="mb-nav-title">Khóa Học</div>
+                <div class="mb-nav-title">KHÓA HỌC</div>
             </a>
         </div>
         <div class="mb-nav-item">
-            <a href="home#profile-section">
+            <a href="home#profile-section" onclick='closeNav()'>
                 <i class="fa fa-user">
                 </i>
-                <div class="mb-nav-title">Giảng Viên</div>
+                <div class="mb-nav-title">GIẢNG VIÊN</div>
             </a>
         </div>
         <div class="mb-nav-item">
-            <a href="home#profile-section1">
+            <a onclick='toggleNav()'>
                 <i class="fa fa-list">
                 </i>
-                <div class="mb-nav-title">Xem Thêm</div>
+                <div class="mb-nav-title">DANH MỤC</div>
             </a>
+        </div>
+    </div>
+
+    <!-- Navigation links (hidden by default) -->
+    <div id="mbNavMenu" class="overlay">
+        <div class="overlay-content" id="mbNavMenu">
+            <div class="row">
+                <div class="column">
+                    <h3 class="column-title">VỀ CHÚNG TÔI</h3>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Trang Chủ</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Giới Thiệu</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Giảng Viên</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Đánh Giá</a>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">LỘ TRÌNH</h3>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Lộ Trình Cho Học Sinh Cấp 3</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Lộ Trình Cho Sinh Viên</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Lộ Trình Cho Người Làm Ngành CNTT</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Lộ Trình Cho Người Làm Trái Ngành</a>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">KHÓA HỌC</h3>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Khóa Học IT Fundamentals</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Khóa Học Java Core</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Khóa Học Java Backend/Spring Boot</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Khóa Học Python Backend</a>
+                </div>
+                <div class="column">
+                    <h3 class="column-title">HƯỚNG DẪN</h3>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Hình Thức Học</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Lịch Khai Giảng</a>
+                    <a href="#">
+                        <i class="fa fa-arrow-right"></i>
+                        Đăng Ký Học Thử</a>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -78,29 +143,93 @@
             </a>
 
             <div class="menu h-xs">
+                <div class="menu-item dropdown">DANH MỤC
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    <div class="dropdown-content">
+                        <div class="row">
+                            <div class="column">
+                                <h3 class="column-title">VỀ CHÚNG TÔI</h3>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Trang Chủ</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Giới Thiệu</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Giảng Viên</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Đánh Giá</a>
+                            </div>
+                            <div class="column">
+                                <h3 class="column-title">LỘ TRÌNH</h3>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Lộ Trình Cho Học Sinh Cấp 3</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Lộ Trình Cho Sinh Viên</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Lộ Trình Cho Người Làm Ngành CNTT</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Lộ Trình Cho Người Làm Trái Ngành</a>
+                            </div>
+                            <div class="column">
+                                <h3 class="column-title">KHÓA HỌC</h3>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Khóa Học IT Fundamentals</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Khóa Học Java Core</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Khóa Học Java Backend/Spring Boot</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Khóa Học Python Backend</a>
+                            </div>
+                            <div class="column">
+                                <h3 class="column-title">HƯỚNG DẪN</h3>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Hình Thức Học</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Lịch Khai Giảng</a>
+                                <a href="#">
+                                    <i class="fa fa-arrow-right"></i>
+                                    Đăng Ký Học Thử</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <a href="home#home">
-                    <div class="menu-item active ">Trang Chủ</div>
+                    <div class="menu-item active">TRANG CHỦ</div>
                 </a>
                 <a href="home#about">
-                    <div class="menu-item">Giới Thiệu</div>
+                    <div class="menu-item">GIỚI THIỆU</div>
                 </a>
                 <a href="home#course-section">
-                    <div class="menu-item">Khóa Học</div>
+                    <div class="menu-item">KHÓA HỌC</div>
                 </a>
                 <a href="home#testimonial">
-                    <div class="menu-item">Đánh giá</div>
+                    <div class="menu-item">LỘ TRÌNH</div>
                 </a>
                 <a href="home#schedule-section">
-                    <div class="menu-item">Lịch Khai Giảng</div>
+                    <div class="menu-item">LỊCH KHAI GIẢNG</div>
                 </a>
                 <a href="home#profile-section">
-                    <div class="menu-item">Giảng Viên</div>
+                    <div class="menu-item">GIẢNG VIÊN</div>
                 </a>
             </div>
 
             <div class="right-menu">
                 <div class="cart-btn">
-                    <i class='fa fa-cart-plus'></i>
+                    <i class='fa fa-pencil-square-o'></i>
                 </div>
             </div>
         </div>

@@ -29,7 +29,7 @@ Array.from(menuItems).forEach(item => {
 //button back to top
 const btnBackToTop = document.querySelector(".back-to-top");
 
-window.addEventListener("scroll", function() {
+window.addEventListener("scroll", function () {
 
     if (window.scrollY > 200 || document.documentElement.scrollTop > 200) {
 
@@ -45,15 +45,15 @@ var coll = document.getElementsByClassName("collapsible");
 var i;
 
 for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
+    coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
 }
 
 
@@ -122,7 +122,23 @@ window.fbAsyncInit = function () {
 }(document, 'script', 'facebook-jssdk'));
 
 //Zalo
-if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) )
-{document.getElementById("linkzalo").href="https://zalo.me/0966139100";}
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { document.getElementById("linkzalo").href = "https://zalo.me/0966139100"; }
 
+
+/* Open when someone clicks on the span element */
+function toggleNav() {
+    let nav = document.getElementById("mbNavMenu");
+    if (!nav.style.width || nav.style.width === "0%") {
+        nav.style.width = "100%";
+    } else {
+        nav.style.width = "0%";
+    }
+}
+
+function closeNav() {
+    let nav = document.getElementById("mbNavMenu");
+    if (nav.style.width === "100%") {
+        nav.style.width = "0%";
+    }
+}
 
