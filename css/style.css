@@ -206,26 +206,26 @@ section {
     color: var(--secondary-color);
 }
 
-.food-menu {
+.course-menu {
     padding: 4rem;
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
-.food-menu h1 {
+.course-menu h1 {
     color: var(--black);
 }
 
-.food-menu p {
+.course-menu p {
     margin: 2rem 0;
 }
 
-.food-category {
+.course-category {
     display: flex;
 }
 
-.food-category button {
+.course-category button {
     padding: .5rem 2.5rem;
     margin: 0 1rem;
     outline: none;
@@ -238,23 +238,23 @@ section {
     transition: .3s ease-in-out;
 }
 
-.food-category button:hover,
-.food-category button.active {
+.course-category button:hover,
+.course-category button.active {
     background-color: var(--primary-color);
     color: var(--white);
 }
 
 
-/* FOOD MENU */
+/* COURSE MENU */
 
-.food-item-wrap {
+.course-item-wrap {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     margin-top: 3rem;
 }
 
-.food-item {
+.course-item {
     padding: 1rem;
     height: 30rem;
 }
@@ -439,7 +439,7 @@ section {
 
 .mb-nav-item i {
     font-size: 1.5rem;
-    color: var(--second-color);
+    color: var(--black);
     z-index: 2;
 }
 
@@ -475,49 +475,6 @@ section {
 
 .footer-link {
     color: var(--primary-color);
-}
-
-
-/* Style the button that is used to open and close the collapsible content */
-.collapsible {
-    border: .1rem solid var(--primary-color);
-    border-radius: 0.5rem;
-    background-color: var(--white);
-    color: var(--primary-color);
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    outline: none;
-    font-size: 18px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active,
-.collapsible:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-.active {
-    border-radius: 0.5rem 0.5rem 0rem 0rem;
-}
-
-/* Style the collapsible content. Note: hidden by default */
-.content {
-    padding: 0 18px;
-    display: none;
-    overflow: hidden;
-    background-color: var(--white);
-    border: .1rem solid var(--primary-color);
-    border-radius: 0rem 0rem 0.5rem 0.5rem;
-    text-align: left;
-}
-
-.questions {
-    margin-bottom: 5px;
 }
 
 .icon {
@@ -578,9 +535,14 @@ section {
 }
 
 .profile-description-container {
-    text-align: left;
+    text-align: justify;
     padding: 1rem;
 }
+
+.profile-description {
+    padding: 0.5rem 0;
+}
+
 
 .profile-title {
     color: var(--primary-color);
@@ -944,54 +906,121 @@ span#fcta-phone-tracking {
 /** Mobile Menu*/
 /* The Overlay (background) */
 .overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */   
-    height: 85%;
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 93%;
     width: 0;
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 0;
     background-image: radial-gradient(at top left, #E2FFEC 20%, #fff 97%);
-    overflow-x: hidden; /* Disable horizontal scroll */
-    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-  }
-  
-  /* Position the content inside the overlay */
-  .overlay-content {
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
     position: relative;
-    top: 10%; /* 10% from the top */
-    width: 100%; /* 100% width */
-    text-align: center; /* Centered text/links */
-    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
-  }
-  
-  /* The navigation links inside the overlay */
-  .overlay a {
-    padding: 8px 20px;
+    top: 10%;
+    /* 10% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 15px 20px;
     text-decoration: none;
     color: var(--black);
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-  }
-  
-  /* When you mouse over the navigation links, change their color */
-  .overlay a:hover, .overlay a:focus {
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
     color: #f1f1f1;
-  }
-  
-  /* Position the close button (top right corner) */
-  .overlay .closebtn {
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
     position: absolute;
     top: 20px;
     right: 45px;
     font-size: 60px;
-  }
-  
-  /* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-  @media screen and (max-height: 450px) {
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
     .overlay .closebtn {
-      font-size: 40px;
-      top: 15px;
-      right: 35px;
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
     }
-  }
+}
+
+
+/** FAQ SECTION */
+.question-container {
+    margin-bottom: 5px;
+}
+
+.question-accordion {
+    border: .1rem solid var(--primary-color);
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    color: var(--primary-color);
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active,
+.question-accordion:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+} 
+
+.active, .question-accordion{
+    border-radius: 0.5rem 0.5rem 0rem 0rem;
+}
+
+.question-accordion:after {
+    content: '\002B';
+    color: var(--primary-color);
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+    color: var(--white);
+}
+
+.question-panel {
+    padding: 0 18px;
+    text-align: justify;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: var(--white);
+    border: .1rem solid var(--primary-color);
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}

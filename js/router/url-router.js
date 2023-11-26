@@ -12,27 +12,30 @@ document.addEventListener("click", (e) => {
 
 // create an object that maps the url to the template, title, and description
 const urlRoutes = {
+	//router for error
 	404: {
 		template: "/templates/common/404.html",
-		title: "404 | " + urlPageTitle,
+		title: "Không Tìm Thấy Trang | " + urlPageTitle,
 		description: "Page not found",
 		js: null
 	},
+	//router for home and default
 	"/": {
 		template: "/templates/home.html",
-		title: "Home | " + urlPageTitle,
+		title: "Trang Chủ | " + urlPageTitle,
 		description: "This is the home page",
 		js: null
 	},
 	"/home": {
 		template: "/templates/home.html",
-		title: "Home | " + urlPageTitle,
+		title: "Trang Chủ | " + urlPageTitle,
 		description: "This is the home page",
 		js: '/js/templates/home.js'
 	},
+	//router for courses
 	"/courses-it-fundamentals": {
 		template: "/templates/courses/it-fundamentals.html",
-		title: "Khóa học IT Fundamentals | " + urlPageTitle,
+		title: "Khóa Học IT Fundamentals | " + urlPageTitle,
 		description: "This is the IT Fundamentals courses page",
 		js: null
 	}

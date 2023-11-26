@@ -66,7 +66,7 @@
 
 @media only screen and (max-width: 600px) {
     * {
-        font-size: 13px;
+        font-size: 14px;
     }
     .container {
         padding: 0;
@@ -90,23 +90,23 @@
     .about-slogan.start {
         transform: translateX(0);
     }
-    .food-menu {
+    .course-menu {
         padding: 4rem 1rem;
         margin-left: 1rem;
         margin-right: 1rem;
     }
-    .food-item {
+    .course-item {
         width: 50%;
         height: 25rem;
     }
-    .food-category {
+    .course-category {
         overflow-y: scroll;
     }
-    .food-category::-webkit-scrollbar {
+    .course-category::-webkit-scrollbar {
         width: 0 !important;
         display: none;
     }
-    .food-category button {
+    .course-category button {
         width: max-content;
     }
     .review-wrap.active {

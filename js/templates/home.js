@@ -1,6 +1,6 @@
 //category 
 let btnCategory = document.getElementsByClassName("btn-category");
-let foodItems = document.getElementsByClassName("food-item");
+let courseItems = document.getElementsByClassName("course-item");
 
 Array.from(btnCategory).forEach(btn => {
     btn.addEventListener("click", function () {
@@ -12,13 +12,13 @@ Array.from(btnCategory).forEach(btn => {
         });
 
         if (dataBtn == "all") {
-            Array.from(foodItems).forEach(item => {
+            Array.from(courseItems).forEach(item => {
 
                 item.classList.remove("hide")
             });
         } else {
 
-            Array.from(foodItems).forEach(item => {
+            Array.from(courseItems).forEach(item => {
                 let itemArray = item.dataset.item.split(" ");
                 if (itemArray.includes(dataBtn)) item.classList.remove("hide")
                 else item.classList.add("hide");

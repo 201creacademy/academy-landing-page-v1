@@ -126,19 +126,18 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 
 /* Open when someone clicks on the span element */
-function toggleNav() {
-    let nav = document.getElementById("mbNavMenu");
-    if (!nav.style.width || nav.style.width === "0%") {
-        nav.style.width = "100%";
-    } else {
-        nav.style.width = "0%";
-    }
-}
+var acc = document.getElementsByClassName("question-accordion");
+var i;
 
-function closeNav() {
-    let nav = document.getElementById("mbNavMenu");
-    if (nav.style.width === "100%") {
-        nav.style.width = "0%";
-    }
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
 }
 
