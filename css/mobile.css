@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --primary-color: #0F9D58;
+    --secondary-color: #005BB6;
+    --logo-color: #8BFFC6;
+    --background-color: #f0f3f7;
+    --second-color: #9da2ad;
+    --grey: #7a7a7a;
+    --black: #000000;
+    --white: #ffffff;
+}
+
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - MOBILE NAV
+*------------------------------------*
+*/
+.mb-nav {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    z-index: 99;
+    overflow: hidden;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.mb-nav-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 20%;
+    padding: 1rem 0;
+}
+
+.mb-nav-item i {
+    font-size: 1.5rem;
+    color: var(--black);
+    z-index: 2;
+}
+
+.mb-nav-item a {
+    font-size: 1.5rem;
+    color: var(--second-color);
+    z-index: 2;
+    transition: .5s ease-in-out;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.mb-nav-item.active i,
+.mb-nav-item a,
+.mb-nav-item.active .mb-nav-title {
+    color: var(--white);
+}
+
+.mb-move-item {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 20%;
+    background-color: var(--primary-color);
+    transition: .5s ease-in-out;
+}
+
+.mb-nav-title {
+    color: var(--black);
+    font-size: 12px;
+}
+
+.footer-link {
+    color: var(--primary-color);
+}
+
+.icon {
+    color: var(--primary-color);
+}
+
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Mega Menu
+*------------------------------------*
+*/
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */
+    height: 93%;
+    width: 0;
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    background-image: radial-gradient(at top left, #E2FFEC 20%, #fff 97%);
+    overflow-x: hidden;
+    /* Disable horizontal scroll */
+    transition: 0.5s;
+    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 10%;
+    /* 10% from the top */
+    width: 100%;
+    /* 100% width */
+    text-align: center;
+    /* Centered text/links */
+    margin-top: 30px;
+    /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    /* Display block instead of inline */
+    transition: 0.3s;
+    /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover,
+.overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

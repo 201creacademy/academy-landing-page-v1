@@ -126,6 +126,23 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 
 
 /* Open when someone clicks on the span element */
+function toggleNav() {
+    let nav = document.getElementById("mbNavMenu");
+    if (!nav.style.width || nav.style.width === "0%") {
+        nav.style.width = "100%";
+    } else {
+        nav.style.width = "0%";
+    }
+}
+
+function closeNav() {
+    let nav = document.getElementById("mbNavMenu");
+    if (nav.style.width === "100%") {
+        nav.style.width = "0%";
+    }
+}
+
+/* Open when someone clicks on the span element */
 var acc = document.getElementsByClassName("question-accordion");
 var i;
 

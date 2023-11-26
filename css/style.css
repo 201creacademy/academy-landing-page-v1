@@ -49,6 +49,14 @@ html {
     overflow-x: hidden;
 }
 
+.primary-color {
+    color: var(--primary-color);
+}
+
+.secondary-color {
+    color: var(--secondary-color);
+}
+
 .nav {
     position: fixed;
     top: 0;
@@ -157,55 +165,20 @@ section {
     padding: 9rem 0;
 }
 
-.slogan {
-    text-align: left;
-}
-
-.slogan h1 {
-    font-size: 5rem;
-    color: var(--primary-color)
-}
-
-.slogan button {
-    padding: 1rem 3rem;
-    outline: none;
-    border: .125rem solid var(--primary-color);
-    background-color: var(--white);
-    color: var(--primary-color);
-    cursor: pointer;
-    border-radius: 2rem;
-    margin: 3rem 1rem 3rem 0;
-    font-weight: 600;
-    transition: .2s ease-in-out;
-    font-weight: 600;
-}
-
-.slogan button:hover {
-    background-color: var(--primary-color);
-    color: var(--white);
-}
-
-.about-slogan {
-    padding: 3rem;
-    background-color: var(--white);
-    border-radius: 2rem;
-    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
-}
-
-.about-slogan h3 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: var(--black);
-}
-
-.primary-color {
-    color: var(--primary-color);
-}
-
-.secondary-color {
-    color: var(--secondary-color);
-}
-
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Course Menu 
+*------------------------------------*
+*/
 .course-menu {
     padding: 4rem;
     background-color: var(--white);
@@ -244,9 +217,79 @@ section {
     color: var(--white);
 }
 
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Slogan 
+*------------------------------------*
+*/
+.slogan {
+    text-align: left;
+}
 
-/* COURSE MENU */
+.slogan h1 {
+    font-size: 5rem;
+    color: var(--primary-color)
+}
 
+.slogan button {
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: .125rem solid var(--primary-color);
+    background-color: var(--white);
+    color: var(--primary-color);
+    cursor: pointer;
+    border-radius: 2rem;
+    margin: 3rem 1rem 3rem 0;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+    font-weight: 600;
+}
+
+.slogan button:hover {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.about-slogan {
+    padding: 3rem;
+    background-color: var(--white);
+    border-radius: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
+}
+
+.about-slogan h3 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: var(--black);
+}
+
+.about-slogan .about-slogan-title {
+    font-size: 24px;
+}
+
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - COURSE MENU 
+*------------------------------------*
+*/
 .course-item-wrap {
     display: flex;
     flex-wrap: wrap;
@@ -411,81 +454,20 @@ section {
     z-index: 99;
 }
 
-
-/* MOBILE NAV */
-
-.mb-nav {
-    position: fixed;
-    bottom: 0;
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: space-between;
-    background-color: var(--white);
-    z-index: 99;
-    overflow: hidden;
-    border-top-left-radius: 2rem;
-    border-top-right-radius: 2rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
-
-.mb-nav-item {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex: 20%;
-    padding: 1rem 0;
-}
-
-.mb-nav-item i {
-    font-size: 1.5rem;
-    color: var(--black);
-    z-index: 2;
-}
-
-.mb-nav-item a {
-    font-size: 1.5rem;
-    color: var(--second-color);
-    z-index: 2;
-    transition: .5s ease-in-out;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-}
-
-.mb-nav-item.active i,
-.mb-nav-item a,
-.mb-nav-item.active .mb-nav-title {
-    color: var(--white);
-}
-
-.mb-move-item {
-    position: absolute;
-    left: 0;
-    height: 100%;
-    width: 20%;
-    background-color: var(--primary-color);
-    transition: .5s ease-in-out;
-}
-
-.mb-nav-title {
-    color: var(--black);
-    font-size: 12px;
-}
-
-.footer-link {
-    color: var(--primary-color);
-}
-
-.icon {
-    color: var(--primary-color);
-}
-
-.about-slogan .about-slogan-title {
-    font-size: 24px;
-}
-
-/** Target SECTION*/
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Target
+*------------------------------------*
+*/
 .target-wrap {
     width: 100%;
     padding: 1rem;
@@ -522,7 +504,20 @@ section {
     margin-bottom: 3rem;
 }
 
-/** Profiles SECTION*/
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Profiles
+*------------------------------------*
+*/
 .profile-image {
     left: 50%;
     transform: translateX(-50%);
@@ -548,7 +543,20 @@ section {
     color: var(--primary-color);
 }
 
-
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Social
+*------------------------------------*
+*/
 @keyframes zoom {
     0% {
         transform: scale(.5);
@@ -839,9 +847,20 @@ span#fcta-phone-tracking {
     cursor: pointer;
 }
 
-
-
-/** Mega Menu css*/
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - Mega Menu
+*------------------------------------*
+*/
 .dropdown-content {
     margin-top: 0.5rem;
     display: none;
@@ -903,74 +922,20 @@ span#fcta-phone-tracking {
     }
 }
 
-/** Mobile Menu*/
-/* The Overlay (background) */
-.overlay {
-    /* Height & width depends on how you want to reveal the overlay (see JS below) */
-    height: 93%;
-    width: 0;
-    position: fixed;
-    /* Stay in place */
-    z-index: 1;
-    /* Sit on top */
-    left: 0;
-    top: 0;
-    background-image: radial-gradient(at top left, #E2FFEC 20%, #fff 97%);
-    overflow-x: hidden;
-    /* Disable horizontal scroll */
-    transition: 0.5s;
-    /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
-}
-
-/* Position the content inside the overlay */
-.overlay-content {
-    position: relative;
-    top: 10%;
-    /* 10% from the top */
-    width: 100%;
-    /* 100% width */
-    text-align: center;
-    /* Centered text/links */
-    margin-top: 30px;
-    /* 30px top margin to avoid conflict with the close button on smaller screens */
-}
-
-/* The navigation links inside the overlay */
-.overlay a {
-    padding: 15px 20px;
-    text-decoration: none;
-    color: var(--black);
-    display: block;
-    /* Display block instead of inline */
-    transition: 0.3s;
-    /* Transition effects on hover (color) */
-}
-
-/* When you mouse over the navigation links, change their color */
-.overlay a:hover,
-.overlay a:focus {
-    color: #f1f1f1;
-}
-
-/* Position the close button (top right corner) */
-.overlay .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 45px;
-    font-size: 60px;
-}
-
-/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
-@media screen and (max-height: 450px) {
-    .overlay .closebtn {
-        font-size: 40px;
-        top: 15px;
-        right: 35px;
-    }
-}
-
-
-/** FAQ SECTION */
+/*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+*------------------------------------*
+    SECTION - FAQ
+*------------------------------------*
+*/
 .question-container {
     margin-bottom: 5px;
 }
@@ -991,13 +956,14 @@ span#fcta-phone-tracking {
     transition: 0.4s;
 }
 
-.active,
+.question-accordion.active,
 .question-accordion:hover {
     background-color: var(--primary-color);
     color: var(--white);
-} 
+}
 
-.active, .question-accordion{
+.question-accordion.active,
+.question-accordion {
     border-radius: 0.5rem 0.5rem 0rem 0rem;
 }
 
@@ -1009,7 +975,7 @@ span#fcta-phone-tracking {
     margin-left: 5px;
 }
 
-.active:after {
+.question-accordion.active:after {
     content: "\2212";
     color: var(--white);
 }
